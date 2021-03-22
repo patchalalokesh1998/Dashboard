@@ -43,6 +43,18 @@
       position:absolute;
       top:113px;
   }
+  .tableimg
+  {
+      width: 100px;
+      height:100px;
+      border-radius: 20px;
+  }
+  .progressbar
+  {
+      height:9px;
+      /* width:120px; */
+  }
+  
 
   /* @media (min-width: 0px) and (max-width: 576px)  {
      
@@ -59,6 +71,11 @@
   .secoundnavbarright{
       display:none;
   }
+ .table-responsive-sm
+  {
+      overflow:auto;
+      width:100%;
+  } 
 }
 
   @media (min-width: 769px)  {
