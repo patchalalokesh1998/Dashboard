@@ -32,10 +32,12 @@
     <div>
       <ul class="navbar-nav" style="display: inline-block;">
         <li class="nav-item displayonlg">
-          <a class="nav-link" href="#">icon1<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#"><i class="fa fa-bell" aria-hidden="true"></i>
+            <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item displayonlg">
-          <a class="nav-link" href="#">icon2</a>
+          <a class="nav-link" href="#"><i class="fa fa-tasks" aria-hidden="true"></i>
+          </a>
         </li>
         <li class="nav-item displayonlg">
           <a class="nav-link" href="#">icon3</a>
@@ -124,14 +126,16 @@
       <li class="breadcrumb-item active"><a href="#">Dashboard</a></li>
   </ol></div>
     <div class="secoundnavbarright">
-      <div>icon1 <span></span></div>
+      <div><i class="fa fa-commenting-o" aria-hidden="true"></i>
+        <span></span></div>
       <div><i class="fa fa-line-chart" aria-hidden="true"></i>
-        <span>Dashboard icon</span></div>
-      <div>icon3 <span>setting icon</span></div>
+        <span class="ml-3">Dashboard icon</span></div>
+      <div><i class="fa fa-cog" aria-hidden="true"></i>
+        <span class="ml-3">Settings</span></div>
     </div>
   </nav>
  <mat-drawer-container class="example-container" style="top:115px; z-index: -1;" autosize>
-  <mat-drawer #drawer style="background-color:#2f353a; width:200px; position: fixed;" class="example-sidenav"  [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+  <mat-drawer #drawer style="background-color:#2f353a; width:200px; position: fixed;" class="example-sidenav"  [mode]="mobileQuery.matches ? 'over' : 'side'" fixedTopGap="56">
     <p>Auto-resizing sidenav</p>
     <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
     <button style="top:85%;" (click)="showFiller = !showFiller" mat-raised-button>
@@ -142,5 +146,66 @@
   <div class="example-sidenav-content">
     Lorem, ipsum dolor sit amet consectetur.Lorem, ipsum dolor sit amet consectetur.Lorem, ipsum dolor sit amet consectetur.
   </div>
+  <div class="container-fluid ml-3 padding-0" style="border: gray solid 2px;">
+    <div style="height: 30px; background-color: lightgrey; color: black; font-weight: 100;">Traffic and Sales</div>
+    <div class="row">
+      <div class="col col-lg-6">
+        <label class="mt-4">Monday</label>
+        <mat-progress-bar class="mt-1" mode="determinate" value="40"></mat-progress-bar>
+        <mat-progress-bar class="mt-1" mode="determinate" value="60" color="accent" ></mat-progress-bar>
 
+        <label>Tuesday</label>
+        <mat-progress-bar class="mt-3" mode="determinate" value="40"></mat-progress-bar>
+        <mat-progress-bar class="mt-1" mode="determinate" value="20" color="accent"></mat-progress-bar>
+
+        <label>Wednesday</label>
+        <mat-progress-bar class="mt-3" mode="determinate" value="40"></mat-progress-bar>
+        <mat-progress-bar class="mt-1" mode="determinate" value="70" color="accent"></mat-progress-bar>
+
+        <label>Thursday</label>
+        <mat-progress-bar class="mt-3" mode="determinate" value="40"></mat-progress-bar>
+        <mat-progress-bar class="mt-1" mode="determinate" value="50" color="accent"></mat-progress-bar>
+
+        <label>Friday</label>
+        <mat-progress-bar class="mt-3" mode="determinate" value="40"></mat-progress-bar>
+        <mat-progress-bar class="mt-1" mode="determinate" value="80" color="accent"></mat-progress-bar>
+
+        <label>Saturday</label>
+        <mat-progress-bar class="mt-3" mode="determinate" value="40"></mat-progress-bar>
+        <mat-progress-bar class="mt-1" mode="determinate" value="90" color="accent"></mat-progress-bar>
+
+        <label>Sunday</label>
+        <mat-progress-bar class="mt-3" mode="determinate" value="40"></mat-progress-bar>
+        <mat-progress-bar class="mt-1 mb-4" mode="determinate" value="20" color="accent"></mat-progress-bar>
+
+      </div>
+      <div class="col col-lg-6 mt-5">
+         <label><i class="fa fa-male mt-4" aria-hidden="true"></i>
+          Male</label>
+         <mat-progress-bar class="mt-1" mode="determinate" value="40"></mat-progress-bar>
+
+         <label class="mt-3"><i class="fa fa-female" aria-hidden="true"></i>
+          Female</label>
+         <mat-progress-bar class="mt-1" mode="determinate" value="40"></mat-progress-bar>
+
+         <label class="mt-5"><i class="fa fa-globe" aria-hidden="true"></i>
+          Organic Search</label>
+         <mat-progress-bar class="mt-1" mode="determinate" value="40"></mat-progress-bar>
+
+         <label class="mt-3"><i class="fa fa-facebook" aria-hidden="true"></i>
+          Facebook</label>
+         <mat-progress-bar class="mt-1" mode="determinate" value="40"></mat-progress-bar>
+
+         <label class="mt-2"><i class="fa fa-twitter" aria-hidden="true"></i>
+          Twitter</label>
+         <mat-progress-bar class="mt-1" mode="determinate" value="40"></mat-progress-bar>
+
+         <label class="mt-2"><i class="fa fa-linkedin" aria-hidden="true"></i>
+          LinkedIn</label>
+         <mat-progress-bar class="mt-1" mode="determinate" value="40"></mat-progress-bar>
+
+      </div>
+    </div>
+  </div>
 </mat-drawer-container>
+
