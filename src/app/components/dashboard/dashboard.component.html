@@ -1,0 +1,155 @@
+<div style="background-color: #e4e5e6; position:fixed; z-index:100; width:100%">
+  
+   
+  <nav class="navbar navbar-expand-lg navbar-light header" style="background-color: white; border-bottom: 1px solid black;">
+    <div class="displayonsm">
+      <button mat-button (click)="drawer.toggle()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="displayonsm">
+      <a class="navbar-brand"  href="#">brand icon</a>
+    </div>
+    <div class="displayonlg">
+      <a class="navbar-brand " style="display:inline-block; padding-right: 25px;" href="#">brand icon</a>
+      <button  mat-button (click)="drawer.toggle()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <ul class="navbar-nav displayonlg" style="padding-left:25px; display: inline-block;">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Dashboard<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">User</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Settings</a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <ul class="navbar-nav" style="display: inline-block;">
+        <li class="nav-item displayonlg">
+          <a class="nav-link" href="#"><i class="fa fa-bell" aria-hidden="true"></i>
+            <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item displayonlg">
+          <a class="nav-link" href="#"><i class="fa fa-tasks" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item displayonlg">
+          <a class="nav-link" href="#">icon3</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><img src="" alt="profile" style="width:100px;height:100px;border-radius: 20px;"></a>
+          <div class="dropdown-menu dropdown-menu-right" style="min-width: 250px;">
+            <a href="#" class="dropdown-item">
+              <div style="text-align: center;">Account</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item" style="display: flex; justify-content: space-between;">
+              <div><i class="fa fa-bell" aria-hidden="true"></i><span class="ml-3">Updates</span></div>
+              <div>42</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item" style="display: flex; justify-content: space-between;">
+              <div><i class="fa fa-envelope-square" aria-hidden="true"></i>
+               <span class="ml-3">Messages</span></div>
+              <div>42</div>
+            </a>
+            
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item" style="display: flex; justify-content: space-between;">
+              <div><i class="fa fa-tasks" aria-hidden="true"></i>
+                <span class="ml-3">Tasks</span></div>
+              <div>42</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item" style="display: flex; justify-content: space-between;">
+              <div><i class="fa fa-comments" aria-hidden="true"></i>
+                <span class="ml-3">Comments</span></div>
+              <div>42</div>
+            </a>
+            <a href="#" class="dropdown-item">
+              <div style="text-align: center;" class="mt-2">Settings</div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item" style="display: flex; justify-content: space-between;">
+              <div><i class="fa fa-user" aria-hidden="true"></i>
+                <span class="ml-3">Profile</span></div>
+              <div></div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item" style="display: flex; justify-content: space-between;">
+              <div><i class="fa fa-wrench" aria-hidden="true"></i>
+                <span class="ml-3">Settings</span></div>
+              <div></div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item" style="display: flex; justify-content: space-between;">
+              <div><i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+               <span class="ml-3">Payments</span></div>
+              <div></div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item" style="display: flex; justify-content: space-between;">
+              <div><i class="fa fa-file" aria-hidden="true"></i>
+                <span class="ml-3">Projects</span></div>
+              <div></div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item" style="display: flex; justify-content: space-between;">
+              <div><i class="fa fa-shield" aria-hidden="true"></i>
+                <span class="ml-3">Lock Account</span></div>
+              <div></div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item" style="display: flex; justify-content: space-between;">
+              <div><i class="fa fa-lock" aria-hidden="true"></i>
+              <span class="ml-3">Log Out</span></div>
+              <div></div>
+            </a>
+        </div>
+       
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  </div> 
+  
+  <nav class="navbar navbar-expand-lg navbar-light header" style="background-color: white; display: flex; z-index:100; justify-content: space-between; position: fixed; width: 100%; top:54px;">
+    <div> <ol class="breadcrumb" style="background-color: white; margin-bottom: 0px;">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item active"><a href="#">Dashboard</a></li>
+  </ol></div>
+    <div class="secoundnavbarright">
+      <div><i class="fa fa-commenting-o" aria-hidden="true"></i>
+        <span></span></div>
+      <div><i class="fa fa-line-chart" aria-hidden="true"></i>
+        <span class="ml-3">Dashboard icon</span></div>
+      <div><i class="fa fa-cog" aria-hidden="true"></i>
+        <span class="ml-3">Settings</span></div>
+    </div>
+  </nav>
+ <mat-drawer-container class="example-container" style="top:115px; z-index: 1;" autosize>
+ <mat-drawer #drawer style="background-color:#2f353a; top:116px; width:200px; position: fixed;" class="example-sidenav"  [mode]="mobileQuery.matches ? 'over' : 'side'" fixedTopGap="56">
+
+    <p>Auto-resizing sidenav</p>
+    <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+    <button style="top:85%;" (click)="showFiller = !showFiller" mat-raised-button>
+      Toggle extra text
+    </button>
+  </mat-drawer>
+
+
+  <div class="example-sidenav-content container">
+   <app-main></app-main>
+    </div>
+    
+    </mat-drawer-container>
+     
+    
+
+
