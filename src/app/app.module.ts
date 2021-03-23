@@ -9,13 +9,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MainComponent } from './components/main/main.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ChartcomponentComponent } from './components/chartcomponent/chartcomponent.component';
+import { BrandcardComponent } from './components/brandcard/brandcard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
     DashboardComponent,
-    ChartcomponentComponent
+    ChartcomponentComponent,
+    BrandcardComponent
   ],
   imports: [
     BrowserModule,
