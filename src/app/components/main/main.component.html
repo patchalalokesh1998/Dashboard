@@ -71,9 +71,9 @@
       <div class="col-xs-12 col-md mb-xs-2 mb-0">
         <div>Vists</div>
         <strong>29.703 Users (20%)</strong>
-        <div class="mb-2">
-          <progressbar [value]="55" style="height: 8px;"></progressbar>
-        </div>
+            <div class="mb-2">
+      <progressbar [value]="55" style="height: 8px;"></progressbar>
+    </div>
       </div>
 
      </div>
@@ -100,11 +100,11 @@
             </thead>
             <tbody>
               <tr>
-                <td><img src="" alt="profile" class="tableimg"></td>
+                <td><img src="../../../assets/profile.png" alt="profile" class="tableimg"></td>
                 <td><div>Username</div>
                   <div>new|Registered</div>
                 </td>
-                <td><img src="" alt="flag" class="tableimg"></td>
+                <td><img src="../../../assets/flag.png" alt="flag" class="tableimg"></td>
                 <td>
                   <div style="display: flex; justify-content: space-between;">
                     <div><b>50%</b></div>
@@ -114,18 +114,18 @@
                   <progressbar class="progressbar" [value]="50"></progressbar>
              
                 </td>
-                <td><img src="" alt="pay img" class="tableimg"></td>
+                <td><i class="fa fa-cc-mastercard" style="font-size: 24px;"></i></td>
                 <td>
                   <div>Last login</div>
                   <div><b>10 Sec ago</b></div>
                 </td>
               </tr>
               <tr>
-                <td><img src="" alt="profile" class="tableimg"></td>
+                <td><img src="../../../assets/profile.png" alt="profile" class="tableimg"></td>
                 <td><div>Username</div>
                   <div>new|Registered</div>
                 </td>
-                <td><img src="" alt="flag" class="tableimg"></td>
+                <td><img src="../../../assets/flag.png" alt="flag" class="tableimg"></td>
                 <td>
                   <div style="display: flex; justify-content: space-between;">
                     <div><b>50%</b></div>
@@ -135,18 +135,18 @@
                   <progressbar class="progressbar" [value]="50"></progressbar>
              
                 </td>
-                <td><img src="" alt="pay img" class="tableimg"></td>
+                <td><i class="fa fa fa-cc-visa" style="font-size: 24px;"></i></td>
                 <td>
                   <div>Last login</div>
                   <div><b>10 Sec ago</b></div>
                 </td>
               </tr>
               <tr>
-                <td><img src="" alt="profile" class="tableimg"></td>
+                <td><img src="../../../assets/profile.png" alt="profile" class="tableimg"></td>
                 <td><div>Username</div>
                   <div>new|Registered</div>
                 </td>
-                <td><img src="" alt="flag" class="tableimg"></td>
+                <td><img src="../../../assets/flag.png" alt="flag" class="tableimg"></td>
                 <td>
                   <div style="display: flex; justify-content: space-between;">
                     <div><b>50%</b></div>
@@ -156,18 +156,18 @@
                   <progressbar class="progressbar" [value]="50"></progressbar>
              
                 </td>
-                <td><img src="" alt="pay img" class="tableimg"></td>
+                <td><i class="fa fa fa-cc-visa" style="font-size: 24px;"></i></td>
                 <td>
                   <div>Last login</div>
                   <div><b>10 Sec ago</b></div>
                 </td>
               </tr>
               <tr>
-                <td><img src="" alt="profile" class="tableimg"></td>
+                <td><img src="../../../assets/profile.png" alt="profile" class="tableimg"></td>
                 <td><div>Username</div>
                   <div>new|Registered</div>
                 </td>
-                <td><img src="" alt="flag" class="tableimg"></td>
+                <td><img src="../../../assets/flag.png" alt="flag" class="tableimg"></td>
                 <td>
                   <div style="display: flex; justify-content: space-between;">
                     <div><b>50%</b></div>
@@ -175,7 +175,7 @@
                   </div>
                   <progressbar class="progressbar" [value]="50"></progressbar>
                  </td>
-                <td><img src="" alt="pay img" class="tableimg"></td>
+                <td><i class="fa fa fa-cc-visa" style="font-size: 24px;"></i></td>
                 <td>
                   <div>Last login</div>
                   <div><b>10 Sec ago</b></div>
@@ -189,9 +189,21 @@
 
 
   <div class="container padding-0" style="border: gray solid 2px;">
-    <div style="height: 30px; background-color: lightgrey; color: black; font-weight: 100;">Traffic and Sales</div>
+    <div style="height: 30px; background-color: lightgrey; color: black; font-weight: 100;margin-bottom: 10px; ">Traffic and Sales</div>
     <div class="row">
-      <div class="col col-lg-6">
+      <div class="col-12 col-lg-6">
+         <div class="row">
+           <div class="col-xs-12 col-lg-6" style="padding-left: 16px; padding-right: 16px; border-left: 4px solid #09508a;">
+             <small>New Clients</small>
+             <br>
+             <strong>9123</strong>
+           </div>
+           <div class="col-xs-12 col-lg-6" style="padding-left: 16px; padding-right: 16px; border-left: 4px solid #09508a;">
+            <small>Recuring Clients</small>
+            <br>
+            <strong>2261</strong>
+          </div>
+         </div>
         <label class="mt-4">Monday</label>
         <mat-progress-bar class="mt-1" mode="determinate" value="40"></mat-progress-bar>
         <mat-progress-bar class="mt-1" mode="determinate" value="60" color="accent" ></mat-progress-bar>
@@ -221,7 +233,19 @@
         <mat-progress-bar class="mt-1 mb-4" mode="determinate" value="20" color="accent"></mat-progress-bar>
 
       </div>
-      <div class="col col-lg-6 mt-5">
+      <div class="col-12 col-lg-6 mt-xs-5 mt-lg-0">
+        <div class="row">
+          <div class="col-xs-12 col-lg-6" style="padding-left: 16px; padding-right: 16px; border-left: 4px solid #09508a;">
+            <small>Recuring Clients</small>
+            <br>
+            <strong>2261</strong>
+          </div>
+          <div class="col-xs-12 col-lg-6" style="padding-left: 16px; padding-right: 16px; border-left: 4px solid #09508a;">
+            <small>Recuring Clients</small>
+            <br>
+            <strong>2261</strong>
+         </div>
+        </div>
          <label><i class="fa fa-male mt-4" aria-hidden="true"></i>
           Male</label>
          <mat-progress-bar class="mt-1" mode="determinate" value="40"></mat-progress-bar>

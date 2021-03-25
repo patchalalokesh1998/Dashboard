@@ -9,8 +9,8 @@ import {ChangeDetectorRef} from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
   mobileQuery: MediaQueryList;
+  expand=false;
 
-  showFiller = false;
   private _mobileQueryListener: () => void;
 
   constructor(private media: MediaMatcher,changeDetectorRef: ChangeDetectorRef)
@@ -19,6 +19,20 @@ export class DashboardComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    // console.log(false==false);
+  }
+  expanding()
+  {
+    if(this.expand==true)
+    {
+      this.expand=false;
+      console.log('made to false');
+    }
+    else
+    {
+      this.expand=true;
+      console.log('made to true');
+    }
   }
 
 }

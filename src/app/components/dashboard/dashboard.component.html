@@ -3,15 +3,18 @@
    
   <nav class="navbar navbar-expand-lg navbar-light header" style="background-color: white; border-bottom: 1px solid black;">
     <div class="displayonsm">
-      <button mat-button (click)="drawer.toggle()">
+      <button mat-button (click)="drawer.toggle();expand=true;">
         <span class="navbar-toggler-icon"></span>
       </button>
     </div>
     <div class="displayonsm">
-      <a class="navbar-brand"  href="#">brand icon</a>
+      <a class="navbar-brand"  href="#"><img src="../../../assets/ABSYZ-Square.png" alt="brand-logo" style="height:70px; width:60px"></a>
     </div>
     <div class="displayonlg">
-      <a class="navbar-brand " style="display:inline-block; padding-right: 25px;" href="#">brand icon</a>
+      <a class="navbar-brand " style="display:inline-block; padding-right: 25px;" href="#">
+        <img src="../../../assets/ABSYZ-Square.png" alt="brand-logo" style="height:auto; width:60px">
+ 
+      </a>
       <button  mat-button (click)="drawer.toggle()">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -43,7 +46,7 @@
            </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><img src="" alt="profile" style="width:100px;height:100px;border-radius: 20px;"></a>
+          <a class="nav-link" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><img src="../../../assets/profile.png" alt="profile" style="width:40px;height:40px;border-radius: 20px;"></a>
           <div class="dropdown-menu dropdown-menu-right" style="min-width: 250px;">
             <a href="#" class="dropdown-item">
               <div style="text-align: center;">Account</div>
@@ -120,7 +123,7 @@
 
   </div> 
   
-  <nav class="navbar navbar-expand-lg navbar-light header" style="background-color: white; display: flex; z-index:100; justify-content: space-between; position: fixed; width: 100%; top:53px;">
+  <nav class="navbar navbar-expand-lg navbar-light header" style="background-color: white; display: flex; z-index:50; justify-content: space-between; position: fixed; width: 100%; top:72px; border-top: 1px solid black;">
     <div> <ol class="breadcrumb" style="background-color: white; margin-bottom: 0px;">
       <li class="breadcrumb-item"><a href="#">Home</a></li>
       <li class="breadcrumb-item active"><a href="#">Dashboard</a></li>
@@ -135,12 +138,11 @@
     </div>
   </nav>
  <mat-drawer-container class="example-container" style="top:115px; z-index: 1;" autosize>
- <mat-drawer #drawer style="background-color:#2f353a; top:116px; width:200px; position: fixed;" class="example-sidenav"  [mode]="mobileQuery.matches ? 'over' : 'side'" fixedTopGap="56">
+ <mat-drawer #drawer [ngClass]="{'afterexpanding':expand==true, 'beforeexpanding':expand==false}" style="padding-left:5px;" class="example-sidenav"  [mode]="mobileQuery.matches ? 'over' : 'side'" fixedTopGap="56">
 
     <p>Auto-resizing sidenav</p>
-    <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
-    <button style="top:85%;" (click)="showFiller = !showFiller" mat-raised-button>
-      Toggle extra text
+    <button [ngClass]="{'rotateleft':expand==true, 'rotateright':expand==false}" style="top:100%; position: absolute; right:0px; background-color:#2f353a" (click)="expanding()" mat-raised-button>
+      <i class="fa fa-arrow-right" aria-hidden="true" style="color:white;"></i>
     </button>
   </mat-drawer>
 

@@ -40,7 +40,8 @@
   .navbar-nav .dropdown-menu
   {
       position:absolute;
-      top:113px;
+      top:70px;
+      z-index: 100;
   }
   .tableimg
   {
@@ -52,6 +53,31 @@
   {
       height:9px;
       /* width:120px; */
+  }
+  .afterexpanding
+  {
+    background-color:#2f353a;
+     top:116px;
+      width:200px;
+     position: fixed;
+    
+  }
+  .beforeexpanding
+  {
+    background-color:#2f353a;
+    top:116px;
+     width:100px;
+    position: fixed;
+  }
+  .rotateleft
+  {
+      transform:rotate(180deg);
+      transition: 0.5s;
+  }
+  .rotateright
+  {
+      transform:rotate(360deg);
+      transition: 0.5s;
   }
   
 
