@@ -1,0 +1,16 @@
+.input-whole
+{
+    display: flex; align-items: flex-end;
+}
+.input
+{
+   width:100%;
+    border-left: 0px;
+     border-right: 0px;
+     border-top: 0px;
+     border-bottom: 1px solid;
+}
+input:focus
+{
+    outline: none;
+}

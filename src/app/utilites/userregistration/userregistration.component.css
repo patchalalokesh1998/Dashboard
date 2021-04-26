@@ -1,0 +1,32 @@
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+.input-whole
+{
+    display: flex; align-items: flex-end;
+}
+.input
+{
+   width:100%;
+    border-left: 0px;
+     border-right: 0px;
+     border-top: 0px;
+     border-bottom: 1px solid;
+}
+.profile
+{
+    padding:15px;
+     position: relative;
+      border: solid black 0.5px;
+       border-style:dotted; display: flex;
+    flex-direction: column;
+    justify-content: center;
+     align-items: center;
+}
+.fa
+{
+    color: white;
+}

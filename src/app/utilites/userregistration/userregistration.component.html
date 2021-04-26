@@ -1,0 +1,177 @@
+
+<app-header (toggle)="snav.toggle()"></app-header>
+<mat-sidenav-container class="example-sidenav-container">
+    <mat-sidenav [position]="mobileQuery.matches ? 'start' : 'end'" class="sidenav" #snav mode='over'
+                 [fixedInViewport]="mobileQuery.matches">
+                 hi it is working
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+<div class="mt-4 container">
+    <div class="row">
+        <div class="col-12 col-md-3">
+            <a href="" style="text-decoration: none;">
+                <div class="bg-success text-white" style="padding:8px;">
+                    <span>icon Registration</span>
+                    <span style="float:right">icon</span>
+                  </div>
+            </a>
+            
+            <div class="mt-1 bg-secondary text-white" style="padding:8px;">
+                <span><i class="fa fa-registered"></i> Registration</span>
+                <span style="float:right">icon</span>
+              </div>
+              <div class="mt-1 bg-secondary text-white" style="padding:8px;">
+                <span><i class="fa fa-mail-bulk"></i> Posts</span>
+               
+              </div>
+              <div class="mt-1 bg-secondary text-white" style="padding:8px;">
+                <span><i class="fa fa-handshake"></i> Meet now</span>
+               
+              </div>
+              <div class="mt-1 bg-secondary text-white" style="padding:8px;">
+                <span><i class="fa fa-users"></i> Communities</span>
+              </div>
+              <div class="mt-1 bg-secondary text-white" style="padding:8px;">
+                <span><i class="fa fa-id-badge"></i> My Profile</span>
+                
+              </div>
+              <div class="mt-1 bg-secondary text-white" style="padding:8px;">
+                <span><i class="fa fa-bell"></i> Notifications</span>
+              </div>
+        </div>
+        <div class="col-12 col-md-9">
+            <b>Registration</b>
+            <hr>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="mt-3 input-whole">
+                        <div><i class="fas fa-user-tie"></i></div>
+                        <div class="input" style="width:80%">
+                            <div><small>first name</small></div>
+                            <div class="ml-1">
+                                <input class="input"  type="text" placeholder="Enter First Name">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mt-3 input-whole">
+                        <div><i class="fas fa-user-tie"></i></div>
+                        <div class="input" style="width:80%">
+                            <div><small>User Name</small></div>
+                            <div class="ml-1">
+                                <input class="input"  type="text" placeholder="Enter Your username">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mt-3 input-whole">
+                        <div><i class="fas fa-lock"></i></div>
+                        <div class="input" style="width:80%">
+                            <div><small>Password</small></div>
+                            <div class="ml-1">
+                                <input class="input"  type="password" placeholder="Enter Your username">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mt-3 input-whole">
+                        <div><i class="fas fa-lock"></i></div>
+                        <div class="input" style="width:80%">
+                            <div><small>Password</small></div>
+                            <div class="ml-1">
+                                <input class="input"  type="password" placeholder="Enter Your username">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mt-3 input-whole">
+                        <div><i class="fas fa-lock"></i></div>
+                        <div class="input" style="width:80%">
+                            <div><small>Re Enter Password</small></div>
+                            <div class="ml-1">
+                                <input class="input"  type="password" placeholder="ReEnter Your username">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mt-3 input-whole">
+                        <div><i class="fas fa-table"></i></div>
+                        <div class="input" style="width:80%">
+                            <div><small>Date of Birth</small></div>
+                            <div class="ml-1">
+                                <input class="input"  type="date" placeholder="Enter Date of Birth">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mt-3 input-whole">
+                        <div><i class="fas fa-search-location"></i></div>
+                        <div class="input" style="width:80%">
+                            <div><small>City/State</small></div>
+                            <div class="ml-1">
+                                <input class="input"  type="text" placeholder="Enter City/state">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mt-3 input-whole">
+                        <div><i class="fas fa-search-location"></i></div>
+                        <div class="input" style="width:80%">
+                            <div><small>Country</small></div>
+                            <div class="ml-1">
+                                <input class="input"  type="text" placeholder="Enter Country">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="mt-3 input-whole">
+                        <div><i class="fas fa-user-tie"></i></div>
+                        <div class="input" style="width:80%">
+                            <div><small>Last Name</small></div>
+                            <div class="ml-1">
+                                <input class="input"  type="text" placeholder="Enter Last Name">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mt-3 input-whole">
+                        <div><i class="fas fa-envelope-square"></i></div>
+                        <div class="input" style="width:80%"> 
+                            <div><small>Enter Email</small></div>
+                            <div class="ml-1">
+                                <input class="input"  type="email" placeholder="Enter Email Address">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mt-4 profile">
+                     <div style="display: inline-block; position: absolute; right: 10px; top:10px;">
+                        <i class="fas fa-camera-retro"></i>
+                    </div>
+                        <img class="rounded-circle" src="../../../assets/profile.png" alt="profile" style="width:75px; height:75px">
+                      <div><b>Lokesh</b></div>
+                      <div><small><i class="fas fa-search-location"></i> Vishakhapatnam</small></div>
+                    </div>
+                    <div class="mt-4" style="padding:8px; background-color: rgb(243, 142, 142);">
+                       <b class="text-danger">Disclaimer</b>
+                       <br>
+                       <p class="mt-2">
+                        his property specifies what kind of border to display:
+                       </p>
+                       <button class="mt-2 btn btn-danger" style="border-radius:20px" >Accept</button>
+                    </div>
+                   
+                </div>
+                <div class="mt-4" style="text-align: center; width:100%">
+                    <button class="btn btn-primary" type="button" style="border-radius:20px; ">Register</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
+</mat-sidenav-content>
+</mat-sidenav-container>

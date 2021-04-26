@@ -1,0 +1,125 @@
+/* header */
+*{
+    font-family: 'Raleway', sans-serif;
+}
+ul>li{
+    margin-top:8px;
+}
+
+.example-sidenav-container
+{
+ width:100%;
+ height: 100%;
+ margin-top: 0px;
+}
+.headerfontcolor
+{
+    color:white;
+}
+.sidenav
+{
+    width:229px;
+}
+.mainimage
+{
+  height: 500px; 
+  width:100%; 
+  
+  /* background-image: url('../../../assets/interview_back1.jpg');
+  background-color:rgba(0, 0, 0, 0.6);  */
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)),url('../../../assets/interview_back1.jpg');
+  background-repeat: no-repeat; 
+  
+  background-size: cover; 
+  background-position: center; 
+}
+.categories
+{
+    width:20%;
+    /* display: inline-block; */
+    display: flex;
+    align-items: center;
+    
+    height:80px;
+    border: solid rgb(80, 73, 73) 1px;
+}
+.cat-img
+{
+    display: inline-block;
+    /* line-height: 40px; */
+    /* text-align: center; */
+    width: 30%;
+    margin-left: 10px;
+    /* height: 80px; */
+}
+.cat-content
+{
+    display: inline-block;
+    /* line-height: 40px; */
+     /* height: 80px; */
+    width:70%;
+}
+
+.discription
+{
+       width:100%;
+    height:400px;
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0), rgba(0,0,0,0.6)),url('../../../assets/interview_back2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+
+.fa
+{
+    color: white;
+    font-size: 16px;
+}
+/* mediaquries */
+
+@media (min-width: 0px) and (max-width: 768px) {
+    /* .nav
+    {
+        height:120px;
+    }
+    .lgheader
+    {
+        display: none;
+    }
+    .smheader{
+        display:block;
+        width: 100%;
+    } */
+    
+    .categories{
+    width:50%;
+    /* display: inline-block; */
+    /* display: flex;
+    align-items: center;
+    height:80px;
+    border: solid rgb(80, 73, 73) 1px;; */
+}
+
+.sidenav
+{
+    position:absolute
+}
+.form-control
+{
+    border-radius: 30px 0px 0px 30px;
+}
+
+
+}
+/* @media (min-width: 768px) and (max-width: 1023px)
+{
+  .tabview
+  {
+      width:70%;
+  }
+} */

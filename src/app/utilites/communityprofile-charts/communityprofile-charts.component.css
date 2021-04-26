@@ -1,0 +1,68 @@
+button:focus
+{
+    outline: none;
+}
+.to
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.from
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.to>div
+{
+    display: flex;
+    align-items: flex-end;
+}
+.from>div
+{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+}
+.to>div>div{
+    background-color: rgb(226, 250, 226);
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+    
+}
+.from>div>div{
+    background-color: rgb(211, 243, 164);
+    border-radius: 20px;
+    border-bottom-right-radius: 0px;
+   
+}
+.textinputtosend
+{
+    padding: 5px; outline: none; border: none; width:60%;
+}
+@media (max-width:767px)
+{
+    .leftpart
+    {
+        width:100%;
+    }
+    .textinputtosend
+    {
+        width: 100%;
+    }
+    .rightpart
+    {
+      width: 100%;
+
+    }
+    .rightpart>.btn
+    {
+        float: right;
+        
+    }
+    .message
+    {
+        height: 80px;
+    }
+}

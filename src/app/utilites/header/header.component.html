@@ -1,0 +1,79 @@
+
+<nav class="nav">
+  
+    <div class="lgheader" style="width:100%;">
+      <div style="width:65%">
+        <ul class="navbar-nav mr-auto">
+          
+            <li class="nav-item">
+                <!-- <b><h2>Daily Nickel</h2></b> -->
+                    <a class="nav-link headerfontcolor mr-4 ml-4" style="display: inline-block;"  href="#">
+                        <img src="../../../assets/logo.png" style="width:151px;" alt="logo">
+                        <span class="sr-only">(current)</span></a>
+                <!-- <a style="display: inline-block; margin-left: 10px; margin-right: 10px;" class="nav-link headerfontcolor"   href="#"><b>Daily Nickel</b></a> -->
+                <div class="ml-4" style="width:400px; display: inline-block; border-radius: 30px 0px 0px 30px; height:40px; margin-top:17px; background-color: white;" >
+                   
+            <input type="search" style="height: 40px; width:189px" placeholder="what are u looking for">
+            <input type="text" style="height: 40px; width:210px" placeholder="* Location">
+            </div>
+            <button class="btn btn-search " type="button" style="background-color: rgb(145, 235, 145); margin-bottom: 6px; height: 40px; display: inline-block; border-radius: 0px 30px 30px 0px;">
+                <i class="fa fa-search-plus" aria-hidden="true"></i>
+            </button>
+            </li>
+      </ul>    
+      </div>
+      <div style="width:35%; display: flex; justify-content:flex-end;">
+       <div style="width:65%; display: flex; justify-content: space-between;">
+        <div>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                <button class="btn headerfontcolor" type="button"   style="background-color: rgb(145, 235, 145);"><i class="fa fa-plus" aria-hidden="true"></i> Login</button>
+                <button class="btn ml-2 headerfontcolor" type="button"   style="background-color: rgb(90, 68, 149);"><i class="fa fa-plus" aria-hidden="true"> Sell</i></button>
+                </li>
+            </ul>  
+        </div>
+        <div>
+            <button class="btn headerfontcolor"  (click)="toggle.emit()" type="button">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+        </div>
+       </div>
+        
+        
+      </div>
+    </div>
+    <div class="smheader headerfontcolor">
+        <div style="height:60px; padding:8px; background-color: black; display: flex; justify-content: space-between;">
+        <div style="width: 60%; height: 52px; display: flex; align-items: center;">
+        <button class="btn headerfontcolor" (click)="toggle.emit();">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        <a class="nav-link  mr-4 ml-4" class="headerfontcolor" style="display: inline-block;"  href="#"> <img src="../../../assets/logo.png" style="width:100px;" alt="logo"><span class="sr-only">(current)</span></a>
+        </div>
+        <div class="headerrightpart">
+          <div class="tabview">
+            <div><i class="fa fa-commenting-o" aria-hidden="true"></i></div>
+            <div><i class="fa fa-bell" aria-hidden="true"></i></div>
+            <div> <img class="img-fluid" style="height:30px; width:30px; border-radius: 20px;" src="../../../assets/interview_back2.jpg" alt="notfd">
+            </div>
+          </div>
+        </div>
+        </div>
+        <div style="height:60px; padding:8px; background-color: black; display: flex; justify-content: space-between;">
+           <div style="width: 80%;">
+            <input type="text" style="width:80%; display: inline-block;" class="form-control" placeholder="what are u Looking for">
+            <button type="button" style="height:42px; background-color: rgb(145, 235, 145);border-radius: 0px 30px 30px 0px"> <i class="fa fa-search-plus" aria-hidden="true"></i></button>
+        </div>
+        <div class="headerbottomrightpart">
+            <div class="tabview">
+                <div><button style="background-color: rgb(7, 7, 110); border-color:rgb(7, 7, 110);">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  </button></div>
+                  <div><button style="background-color: rgb(7, 7, 110); border-color: rgb(7, 7, 110);">
+                    <i class="fa fa-book" aria-hidden="true"></i>
+                  </button></div>
+            </div>
+        </div>
+        </div>
+    </div>
+  </nav>

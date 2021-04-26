@@ -1,0 +1,29 @@
+.example-sidenav-container
+{
+ width:100%;
+ height: 100%;
+ margin-top: 0px;
+}
+.portfolio
+{
+    width:100%;
+    height:300px;
+/* background-image: linear-gradient(top, ); */
+background-image: linear-gradient(rgba(255, 255, 255, 1.0), rgba(149, 146, 147, 1.0));
+}
+div.active
+{
+    background-color: rgb(151, 218, 151);}
+
+.bg-secondar {
+    background-color: #6c757d;
+} 
+
+@media (max-width:767px)
+{
+    .mins
+    {
+        margin-top: 8px;
+        width: 100%;
+    }
+}

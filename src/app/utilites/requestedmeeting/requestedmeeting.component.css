@@ -1,0 +1,29 @@
+.meet{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 100%; height: 100vh;
+    background-image: url('../../../assets/googl_ED.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.body
+{
+    padding:30px;
+    background-color: white;
+    width:80%;
+    margin-bottom: 30px;
+    border-radius:20px;
+}
+input:focus
+{
+    outline: none;
+}
+.forminput
+{
+  padding:4px; border-top: none; border-left: none; border-right: none;
+  width: 100%;
+}

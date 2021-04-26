@@ -1,0 +1,36 @@
+.example-sidenav-container
+{
+ width:100%;
+ height: 100%;
+ margin-top: 0px;
+}
+.sidenav
+{
+    width:229px;
+}
+
+.portfolio
+{
+    width:100%;
+    height:300px;
+/* background-image: linear-gradient(top, ); */
+background-image: linear-gradient(rgba(255, 255, 255, 1.0), rgba(149, 146, 147, 1.0));
+}
+.gallery
+{
+    width:90%;
+  height: 100px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../../../assets/interview_back1.jpg');
+  border-radius: 20px;
+  
+}
+@media (max-width:767px)
+{
+    .gallery
+    {
+        height:185px;
+    }
+}

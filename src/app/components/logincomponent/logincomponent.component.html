@@ -1,0 +1,87 @@
+<!-- <div class="container">
+    <div class="row">
+        <div class="col-12 col-md-8 offset-md-2">
+            <form [formGroup]="form" (submit)="formsubmit()">
+                <div class="form-group">
+                    <label>Enter Username</label>
+                  <input type='email' placeholder="Enter Username" class="form-control" formControlName="username" [ngClass]="{'is-invalid':form.get('username').touched && 
+                  form.get('username').invalid}">
+                <div class="invalid-feedback" *ngIf="form.get('username').hasError('required')" >
+                    Please Enter username
+                </div>
+                <div class="invalid-feedback" *ngIf="form.get('username').hasError('email')" >
+                  Username should be an email
+                </div>
+                </div>
+                <div class="form-group">
+                    <label>Enter Password</label>
+                    <input type='password' style="width: 90%; display: inline-block;" placeholder="Enter Password" class="form-control" formControlName="password" [ngClass]="{'is-invalid':form.get('password').touched && 
+                    form.get('password').invalid}">
+                    <a style="display: inline-block;" (click)="changeinputtype()"><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                  <div class="invalid-feedback" *ngIf="form.get('password').hasError('required')">
+                      Please enter password
+                  </div>
+                  <div class="invalid-feedback" *ngIf="form.get('password').hasError('minLength')">
+                      password should be minimum of 8 char
+                  </div>
+                  </div>
+                  <div style="text-align: center;">
+
+                    <button type="button" class="btn btn-success mr-3" (click)="switch();">Switch to {{buttonname}}</button>
+                    
+                    <button class="btn btn-primary" *ngIf="login; else elseblock " type="submit" [disabled]="form.invalid">Login</button>
+                    <ng-template #elseblock>
+                        <button class="btn btn-primary"  type="submit" [disabled]="form.invalid">signup</button>
+                    </ng-template>
+                </div>
+            </form>
+        </div>
+</div>
+  
+</div> -->
+<!-- <div>hi</div> -->
+<div class="container">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">value</th>
+            <th scope="col">edit</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of dropdownvalue; index as i">
+            <th scope="row">1</th>
+            <td *ngIf="data.display; else elseblock">
+                <select [(ngModel)]="data.value">
+                    <option value="started">
+                        started
+                    </option>
+                    <option value="pending">
+                        pending
+                    </option>
+                    <option value="completed">
+                        completed
+                    </option>
+                </select>
+            </td>
+            <ng-template #elseblock>
+                <td>
+                    <div>{{data.value}}</div>
+                </td>
+            </ng-template>
+            <td>
+                <button *ngIf="data.display; else editelse" type="button" class="btn btn-primary" (click)="change(i);">
+                    un edit
+                </button>
+                <ng-template #editelse>
+                    <button  type="button" class="btn btn-primary" (click)="change(i);">
+                        edit
+                    </button>
+                </ng-template>
+            </td>
+           
+          </tr>
+        </tbody>
+      </table>
+</div>

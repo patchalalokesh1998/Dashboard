@@ -1,0 +1,110 @@
+<app-header (toggle)="snav.toggle()"></app-header>
+<mat-sidenav-container class="example-sidenav-container">
+    <mat-sidenav [position]="mobileQuery.matches ? 'start' : 'end'" class="sidenav" #snav mode='over'
+                 [fixedInViewport]="mobileQuery.matches">
+                 hi it is working
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+ <div class="container-fluid portfolio">
+    <div class="container" style="padding: 30px;">
+    
+    <div class="row align-items-end" style="height:200px;">
+        <div class="col-12 col-md-8">
+          <div>
+              <h1>Artificial Intelligence </h1>
+            <div style="display: flex; justify-content: space-between; width:90%; flex-wrap: wrap;">
+              <div class="mins">
+                <i class="fas fa-eye"></i> 12,064
+              </div>
+              <div  class="mins">
+                <i class="fas fa-calendar-week"></i> jan 27, 2021
+              </div>
+              <div  class="mins">
+                <i class="fas fa-map-pin"></i> down town
+              </div>
+              <div  class="mins">
+                <i class="far fa-flag"></i> posted 3 days ago
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="col-12 col-md-4">
+            <div style="display: flex; align-items: center;">
+            <button class="btn btn-primary">$50.00/hr</button>
+            <div class="ml-2"><i class="fas fa-heart"></i></div>
+            <div class="ml-2"><i class="fas fa-share"></i></div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-3">
+            <a >
+                <div  [routerLink]="['/community','profile']" class="mt-1 bg-secondar text-white" routerLinkActive='active' style="padding:8px;">
+                    <span>Profile</span>
+                    <span style="float:right"><i class="fas fa-calendar-week"></i></span>
+                  </div>
+            </a>
+           <a>
+            <div [routerLink]='["/community","charts"]' class="mt-1 bg-secondar  text-white" routerLinkActive='active' style="padding:8px;">
+                <span>Chat</span>
+                <span style="float:right"><i class="fas fa-phone-volume"></i></span>
+               
+              </div>
+           </a>
+            <a>
+                <div [routerLink]='["/community","marketplace"]' class="mt-1 bg-secondar text-white" routerLinkActive='active' style="padding:8px;">
+                    <span>Market Place</span>
+                    <span style="float:right">
+                        <i class="fas fa-sticky-note"></i>
+                        </span>
+                   
+                  </div>
+            </a>  
+             <a>
+                <div [routerLink]='["/community","members"]' class="mt-1 bg-secondar text-white" routerLinkActive='active' style="padding:8px;">
+                    <span>Members</span>
+                    <span style="float:right">
+                        <i class="fas fa-hands-helping"></i>
+                        </span>
+                  </div>
+             </a>
+             <a>
+                <div [routerLink]='["/community","settings"]' class="mt-1 bg-secondar text-white" routerLinkActive='active' style="padding:8px;">
+                    <span>Community Settings</span>
+                    <span style="float:right"><i class="fas fa-cog"></i></span>
+                  </div>
+             </a>
+              
+             <a>
+                <div class="mt-4" style=" padding:8px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                    <b>Location</b>
+                    <hr>
+                    <small>indiandowntownpolice</small>
+                    <img class="mt-2 img-fluid" src="../../../assets/googl_ED.jpg" alt="map image" >
+    
+                    </div>
+             </a>
+             
+        </div>
+        <div class="col-12 col-md-9">
+           <router-outlet>
+           </router-outlet>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
+</mat-sidenav-content>
+</mat-sidenav-container>
+<!-- 
+`<a routerLink='A' routerLinkActive='active'>A</a>
+    <a routerLink='B' routerLinkActive='active'>B</a>
+    <router-outlet></router-outlet>`,
+  styles: ['.active { border: solid; }'] -->

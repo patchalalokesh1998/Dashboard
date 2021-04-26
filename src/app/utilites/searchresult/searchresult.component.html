@@ -1,0 +1,178 @@
+
+<app-header (toggle)="snav.toggle()"></app-header>
+<mat-sidenav-container class="example-sidenav-container">
+    <mat-sidenav [position]="mobileQuery.matches ? 'start' : 'end'" class="sidenav" #snav mode='over'
+                 [fixedInViewport]="mobileQuery.matches">
+                 hi it is working
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4">
+              <div style="padding:8px;">
+               <b>Location</b>
+               <hr>
+               <div class="form-group" style="position:relative">
+                <div style="display: inline-block; position: absolute; left:10px; top:10px;" >
+                    <i class="fa fa-search"></i>
+                </div>
+                   <input type="text" style="border-radius: 20px; text-align: center;" class="form-control" placeholder="Select Community">
+               </div>
+               <div class="mt-2"> 
+                   <div class="mt-2">
+                    <button type='button' class="btn btn-primary">5mbps</button>
+                    <button type='button' class="ml-2 btn btn-primary">5mbps</button>
+                   </div>
+               
+               <div class="mt-2">
+                <button type='button' class=" btn btn-primary">5mbps</button>
+                <button type='button' class=" ml-2 btn btn-primary">5mbps</button>
+               </div>
+                
+               </div>
+            </div>
+            <div style="padding:8px;">
+                <b>Skills</b>
+                <hr>
+                <input name="check1" type="checkbox">
+                <label class="ml-2" for="check1"><small>Show all</small></label>
+                <br>
+                <input name="check2" type="checkbox">
+                <label class="ml-2" for="check2"><small>Landscaping + gardining</small></label>
+                <br>
+                <input name="check3" type="checkbox">
+                <label class="ml-2" for="check3"><small>Beauty</small></label>
+                <br>
+                <input name="check4" type="checkbox">
+                <label class="ml-2" for="check4"><small>Phones</small></label>
+                <br>
+                <input name="check5" type="checkbox">
+                <label class="ml-2" for="check5"><small>Photography</small></label>
+                <br>
+                <input name="check6" type="checkbox">
+                <label class="ml-2" for="check6"><small>Technical Support</small></label>
+                <br>
+                <input name="check7" type="checkbox">
+                <label class="ml-2" for="check7"><small>Technical Support</small></label>
+                <br>
+                <input name="check8" type="checkbox">
+                <label class="ml-2" for="check8"><small>Legal</small></label>
+                <br>
+                <input name="check9" type="checkbox">
+                <label class="ml-2" for="check9"><small>Pets & Pets care</small></label>
+                <hr>
+               
+            </div>
+            <div style="padding:8px;">
+            <b>Goods</b>
+
+            <hr>
+            <input name="check1" type="checkbox">
+            <label class="ml-2" for="check1"><small>Show all</small></label>
+            <br>
+            <input name="check2" type="checkbox">
+            <label class="ml-2" for="check2"><small>Landscaping + gardining</small></label>
+            <br>
+            <input name="check3" type="checkbox">
+            <label class="ml-2" for="check3"><small>Beauty</small></label>
+            <br>
+            <input name="check4" type="checkbox">
+            <label class="ml-2" for="check4"><small>Phones</small></label>
+            <br>
+            <input name="check5" type="checkbox">
+            <label class="ml-2" for="check5"><small>Photography</small></label>
+            <br>
+            <input name="check6" type="checkbox">
+            <label class="ml-2" for="check6"><small>Technical Support</small></label>
+            <br>
+            <input name="check7" type="checkbox">
+            <label class="ml-2" for="check7"><small>Technical Support</small></label>
+            <br>
+            <input name="check8" type="checkbox">
+            <label class="ml-2" for="check8"><small>Legal</small></label>
+            <br>
+            <input name="check9" type="checkbox">
+            <label class="ml-2" for="check9"><small>Pets & Pets care</small></label>
+            <hr>
+            </div>
+            <div style="padding:8px;">
+              <b>Price Range</b>
+              <hr>
+              <b>$600-$1200</b>
+              <br>
+              <nouislider [connect]="true" [min]="0" [max]="15"></nouislider>
+              <mat-slider min="600" max="1200"></mat-slider>
+              <div class="mt-4" style="display: flex; flex-direction: column; justify-content: center;  align-items: center; flex-wrap: wrap;">
+                  <p style="text-align: center;"><b>Click Apply Filter to get your desired search results</b></p>
+
+                  <button style="width:100%; border-radius:20px;" type="button" class="mt-3 btn btn-success">Apply Filter</button>
+                    <div>
+                        <small>
+                            <button class="btn"><i class="fas fa-sync-alt"></i></button> Reset Filter
+                        </small>
+                    </div>
+              </div>
+
+            </div>
+
+            </div>
+            <div class="col-12 col-md-8">
+              <div style="padding:8px">
+            <small>
+                1076 Results Found
+            </small>
+            <br>
+            <b>Results in "Selected Products"</b>
+            <hr>
+
+            </div>
+            
+            <div style="padding:8px">
+                <div style="float:left">
+                    <small>Showing 1to30 of 1200 results</small>
+                </div>
+                <div class="float">
+                    <div class="dropdown" style="display: inline-block;">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                          Dropdown button
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </div>
+                      <div class="ml-2" style="display: inline-block;">
+                        <button class="btn btn-success" type="button">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                      </div>
+                      <div class="ml-2" style="display: inline-block;">
+                          <button class="btn btn-success" type="button">
+                            <i class="fas fa-map-signs"></i>
+                        </button>
+                    </div>
+                    <div class="ml-2" style="display: inline-block;">
+                        <button class="btn btn-success" type="button">
+                            <i class="fas fa-map-signs"></i>
+                        </button>
+                    </div>
+                </div>
+            
+            </div>
+
+            <div class="row justify-content-center" style="clear: both;">
+                <div *ngFor="let i of [1,2,3,4,5,6,7,8]">
+                    <div class="col-12 col-md-4">
+                        <app-card></app-card>
+                    </div>
+                </div>
+               
+            </div>
+            </div>
+        </div>
+    </div>
+    <app-footer></app-footer>
+    </mat-sidenav-content>
+    </mat-sidenav-container>

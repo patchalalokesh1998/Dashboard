@@ -1,0 +1,142 @@
+<app-header (toggle)="snav.toggle()"></app-header>
+  <mat-sidenav-container class="example-sidenav-container">
+    <mat-sidenav [position]="mobileQuery.matches ? 'start' : 'end'" class="sidenav" #snav mode='over'
+                 [fixedInViewport]="mobileQuery.matches">
+                 hi it is working
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+
+        <div class="navigation">
+            <ul>
+                <li><div class="btn btn-primary" [routerLink]="['/productdetails']">productdetails</div>
+                </li>
+                <li>
+                    <div class="btn btn-primary" [routerLink]="['/searchresult']">searchresult</div>
+      
+                </li>
+                <li>
+                    <div class="btn btn-primary" [routerLink]="['/locationsearch']">locationsearch</div>
+      
+                </li>
+                <li>
+                    <div class="btn btn-primary" [routerLink]="['/userregistration']">userregistration</div>
+  
+                </li>
+                <li>
+                    <div class="btn btn-primary" [routerLink]="['/community']">community</div>
+  
+                </li>
+            </ul>
+                      </div>
+
+         <router-outlet>
+
+         </router-outlet>
+
+        <div class="mainimage">
+            <div class="container">
+                <div class="row align-items-center headerfontcolor"  style="height: 500px;">
+                    <div class=" col-12 col-md-6" >
+                       <h1 >
+                           Search, Sell and Buy<br>
+                           Thats all we do
+                       </h1>
+                       <p>
+                        is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                       </p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <div style="background-color: whitesmoke; width: 100%; display: flex; align-items: center;flex-wrap: wrap;">
+            <div class="categories">
+                <div class="cat-img">
+                    <img class="img-fluid" style="height:50px; width:50px; border-radius: 27px;" src="../../../assets/interview_back2.jpg" alt="notfd">
+                
+                </div>    
+                <div class="cat-content">
+                    Technical Support
+                </div>         
+            </div>
+            <div class="categories">
+                <div class="cat-img">
+                    <img class="img-fluid" style="height:50px; background-color: black; width:50px; border-radius: 27px;" src="../../../assets/interview_back2.jpg" alt="notfd">
+                
+                </div>    
+                <div class="cat-content">
+                    Landscaping and gardining
+                </div>         
+            </div>
+            <div class="categories">
+                <div class="cat-img">
+                    <img class="img-fluid" style="height:50px; width:50px; border-radius: 27px;" src="../../../assets/interview_back2.jpg" alt="notfd">
+                
+                </div>    
+                <div class="cat-content">
+                    Desgin and Development
+                </div>         
+            </div>
+            <div class="categories">
+                <div class="cat-img">
+                    <img class="img-fluid" style="height:50px; width:50px; border-radius: 27px;" src="../../../assets/interview_back2.jpg" alt="notfd">
+                
+                </div>    
+                <div class="cat-content">
+                    Home Improvement
+                </div>         
+            </div>
+            <div class="categories">
+                <div class="cat-img">
+                    <img class="img-fluid" style="height:50px; width:50px; border-radius: 27px;" src="../../../assets/interview_back2.jpg" alt="notfd">
+                
+                </div>    
+                <div class="cat-content">
+                    Sports hobbies and travel
+                </div>         
+            </div>
+        </div>
+        <div class="cards container">
+            <div class="row justify-content-center mt-4">
+                <div *ngFor="let i of [1,2,3,4,5,6,7,8]">
+                    <div class="col-8 col-sm-6 col-md-4 col-lg-3">
+                    <app-card></app-card>
+                    </div>
+                </div> 
+            </div>
+
+            </div>
+        
+        <div class="discription mt-3">
+            <div style="height:160px; width:400px; text-align: center; color: white;">
+              <h1>Join a daily Nickel community today</h1>
+              <p>dumy text dumy textdumy textdumy textdumy textdumy textdumy textdumy text</p>
+             
+            </div>
+            <div style="width:400px; display: flex; justify-content: center;">
+                <button class="btn btn-primary">
+                   My Community
+                </button>
+                <button class="btn btn-primary ml-2">
+                   Recommended
+                </button>
+            </div>
+        </div>
+        <div class="cards container">
+            <div class="row justify-content-center">
+                <div *ngFor="let i of [1,2,3,4,5,6,7,8]" class="col-8 col-md-4 col-lg-3">
+                  <app-card2></app-card2>  
+            </div>
+           
+    </div>
+   
+          
+        </div>
+        <app-footer></app-footer>
+       
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  
