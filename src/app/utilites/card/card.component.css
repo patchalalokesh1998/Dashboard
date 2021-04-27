@@ -11,4 +11,13 @@
     width: 13rem;
     position: relative;
      border-radius: 20px;
+     height:34vh;
+}
+.card-body
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: .8em;
+    padding: 10px
 }

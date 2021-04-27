@@ -35,6 +35,8 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { SettingsComponent } from './utilites/settings/settings.component';
 import { MeetnowComponent } from './utilites/meetnow/meetnow.component';
 import { RequestedmeetingComponent } from './utilites/requestedmeeting/requestedmeeting.component';
+import { CommunityaddComponent } from './utilites/communityadd/communityadd.component';
+import { DateconpipePipe } from './pipes/dateconpipe.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -62,7 +64,9 @@ import { RequestedmeetingComponent } from './utilites/requestedmeeting/requested
     MembersComponent,
     SettingsComponent,
     MeetnowComponent,
-    RequestedmeetingComponent
+    RequestedmeetingComponent,
+    CommunityaddComponent,
+    DateconpipePipe
   ],
   imports: [
     NouisliderModule,

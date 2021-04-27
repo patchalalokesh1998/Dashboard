@@ -11,6 +11,10 @@ import {ProductdetailsComponent} from './utilites/productdetails/productdetails.
 import {SearchresultComponent} from './utilites/searchresult/searchresult.component';
 import {LocationSearchComponent} from './utilites/location-search/location-search.component';
 import {UserregistrationComponent} from './utilites/userregistration/userregistration.component'
+import {CommunityaddComponent} from './utilites/communityadd/communityadd.component'
+
+
+
 const routes: Routes = [
   { path: 'community', component: CommunityprofileComponent,
   children: [
@@ -37,6 +41,9 @@ const routes: Routes = [
 },
 {
   path: 'userregistration', component: UserregistrationComponent
+},
+{
+  path: 'communityadd', component: CommunityaddComponent
 },
 {
   path:'', redirectTo:'dailynickel', pathMatch: 'full'

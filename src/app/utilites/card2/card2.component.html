@@ -1,16 +1,19 @@
 <div class=" mt-3">
-    <div class="card cardbackground">
+    <!-- background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)),url('../../../assets/interview_back1.jpg'); -->
+    <!-- [ngStyle]="{'background': linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)),url({{community.cover}})}" -->
+    <div class="card cardbackground" [style.background]="'linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)),url('+community.cover+')'" >
       <div class="card-top">
-          <img class="img-fluid" style="height:50px; width:50px; border-radius: 27px;" src="../../../assets/interview_back1.jpg" alt="notfound">
+          <img class="img-fluid" style="height:50px; width:50px; border-radius: 27px;" [src]="community.avatar" alt="notfound">
           <div style="display: inline-block;" class="ml-2">
-              <b class="headerfontcolor">Stanly Church</b>
+              <b class="headerfontcolor">{{community.group_name}}</b>
               <br>
-              <small class="headerfontcolor">some example</small>
+              <small class="headerfontcolor">created {{community.created_date |dateconpipe}}</small>
           </div>
       </div>
       <div class="card-bottom">
-          <div>
-              <img class="img-fluid" style="height:50px; width:50px; border-radius: 27px;" src="../../../assets/interview_back2.jpg" alt="notfd">
+          <div style="position:relative; width:50%; height: 50px;" *ngFor="let info of community.members; let i = index">
+            
+                <img class="img-fluid" [ngStyle]="{'height.px':30,'width.px':30,'border-radius.px':27,'position':'absolute','bottom.px':10,'left.px':((i)*10)}"  [src]="info.avatar" alt="notfd">
           </div>
           <div>
               <span class="headerfontcolor">icon1</span>

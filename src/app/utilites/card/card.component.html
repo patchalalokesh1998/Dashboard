@@ -1,18 +1,18 @@
 
 
-    <div class="card mt-3" >
-        <div style="display: inline-block; width: 40px; position: absolute; right:10px; "><i class="fa fa-thumbs-up" aria-hidden="true"></i></div>
-        <img class="card-img-top" style="background-color:rgba(0, 0, 0, 0.6);" src="../../../assets/interview_back2.jpg" alt="Card image cap">
+    <div class="card mt-3" *ngIf="products.id">
+        <div class="fa" style="display: inline-block; width: 40px; position: absolute; right:10px; top:10px; opacity: 1; z-index:100 "><i class="fa fa-thumbs-up" aria-hidden="true"></i> {{products.likes_count}}</div>
+        <img class="card-img-top image-fluid" style="background-color:rgba(0, 0, 0, 0.6); height: 50%;opacity: 0.8;" [src]="products.images[0].image" alt="Card image cap">
         <div class="card-body">
-        <div style="display: relative; float: left; width:80%">
-            <b>Artifical Intelligence</b>
+        <div>
+            <b>{{products.name}}</b>
             <br>
-            <small>demo text</small>
+            <small>{{products.location}}</small>
         </div>
-        <div style="display: relative; float:right; width:20%">
-            <b>Price</b>
+        <div>
+            <b>{{products.price}} $</b>
             <br>
-            <small>2 hrs ago</small>
+            <small>{{products.time_text}}</small>
         </div>
         </div>
       </div>

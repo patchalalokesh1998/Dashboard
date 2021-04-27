@@ -6,7 +6,9 @@
     </mat-sidenav>
 
     <mat-sidenav-content>
+    <div *ngIf="community">
 
+    
         <div class="navigation">
             <ul>
                 <li><div class="btn btn-primary" [routerLink]="['/productdetails']">productdetails</div>
@@ -27,13 +29,12 @@
                     <div class="btn btn-primary" [routerLink]="['/community']">community</div>
   
                 </li>
+                <li>
+                    <div class="btn btn-primary" [routerLink]="['/communityadd']">communityadd</div>
+  
+                </li>
             </ul>
                       </div>
-
-         <router-outlet>
-
-         </router-outlet>
-
         <div class="mainimage">
             <div class="container">
                 <div class="row align-items-center headerfontcolor"  style="height: 500px;">
@@ -99,11 +100,11 @@
                 </div>         
             </div>
         </div>
-        <div class="cards container">
+        <div *ngIf="products" class="cards container">
             <div class="row justify-content-center mt-4">
-                <div *ngFor="let i of [1,2,3,4,5,6,7,8]">
+                <div *ngFor="let info of products.products">
                     <div class="col-8 col-sm-6 col-md-4 col-lg-3">
-                    <app-card></app-card>
+                    <app-card [products]="info"></app-card>
                     </div>
                 </div> 
             </div>
@@ -127,8 +128,9 @@
         </div>
         <div class="cards container">
             <div class="row justify-content-center">
-                <div *ngFor="let i of [1,2,3,4,5,6,7,8]" class="col-8 col-md-4 col-lg-3">
-                  <app-card2></app-card2>  
+                <div *ngFor="let info of community.groups" class="col-8 col-md-4 col-lg-3">
+
+                  <app-card2 [community]="info"></app-card2>  
             </div>
            
     </div>
@@ -136,7 +138,7 @@
           
         </div>
         <app-footer></app-footer>
-       
+    </div>
     </mat-sidenav-content>
   </mat-sidenav-container>
   
