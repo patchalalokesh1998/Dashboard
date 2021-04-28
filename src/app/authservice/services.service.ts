@@ -5,8 +5,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ServicesService {
-  url="https://stg2.dailynickel.com/api/get-community";
-  producturl="https://stg2.dailynickel.com/api/get-products"
+  url="https://musing-wozniak-1a4f86.netlify.app/api/get-community";
+  producturl="https://musing-wozniak-1a4f86.netlify.app/api/get-products";
   constructor(private http:HttpClient) { }
   getcommunity():Observable<any>
   {
@@ -17,13 +17,13 @@ export class ServicesService {
     params.append("fetch","groups");
     params.append("access_token", "dca01463b28685e872f58266ec3c76d0acc4ce80e46c414677bbde34dc364616c21a57a0982708247bb7a62681a8a0f94ab424b06d172ca3");
     console.log(params.get("pageNo"));
-    let headers={
-      // 'Access-Control-Allow-Origin':'*',
-      'Cache-Control': 'no-cache',
-      'Pragma': 'no-cache'
+    // let headers={
+    //   // 'Access-Control-Allow-Origin':'*',
+    //   'Cache-Control': 'no-cache',
+    //   'Pragma': 'no-cache'
 
-    }
-    return this.http.post(this.url,params,{headers});
+    // }
+    return this.http.post(this.url,params);
   }
   getproductdetails():Observable<any>
   {
@@ -42,14 +42,14 @@ export class ServicesService {
     // let headers={
     //   'Access-Control-Allow-Origin':'*',
     
-    // }
-    let headers={
-      // 'Access-Control-Allow-Origin':'*',
-      'Cache-Control': 'no-cache',
-      'Pragma': 'no-cache'
+    // // }
+    // let headers={
+    //   // 'Access-Control-Allow-Origin':'*',
+    //   'Cache-Control': 'no-cache',
+    //   'Pragma': 'no-cache'
 
-    }
-    return this.http.post(this.producturl, params, {headers});
+    // }
+    return this.http.post(this.producturl, params);
   }
   
 }

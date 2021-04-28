@@ -1,0 +1,9 @@
+{
+    "/api": {
+      "target": "https://stg2.dailynickel.com",
+      "secure": true,
+      "changeOrigin": true
+     
+    }
+  }
+  
