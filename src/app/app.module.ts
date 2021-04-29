@@ -37,6 +37,8 @@ import { MeetnowComponent } from './utilites/meetnow/meetnow.component';
 import { RequestedmeetingComponent } from './utilites/requestedmeeting/requestedmeeting.component';
 import { CommunityaddComponent } from './utilites/communityadd/communityadd.component';
 import { DateconpipePipe } from './pipes/dateconpipe.pipe';
+import { GetRecommendedCommunitiesComponent } from './utilites/get-recommended-communities/get-recommended-communities.component';
+import { Card3Component } from './utilites/card3/card3.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -66,7 +68,9 @@ import { DateconpipePipe } from './pipes/dateconpipe.pipe';
     MeetnowComponent,
     RequestedmeetingComponent,
     CommunityaddComponent,
-    DateconpipePipe
+    DateconpipePipe,
+    GetRecommendedCommunitiesComponent,
+    Card3Component
   ],
   imports: [
     NouisliderModule,

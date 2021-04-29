@@ -5,8 +5,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ServicesService {
-  url="https://musing-wozniak-1a4f86.netlify.app/api/get-community";
-  producturl="https://musing-wozniak-1a4f86.netlify.app/api/get-products";
+  url="http://localhost:4200/api/get-community";
+  producturl="http://localhost:4200/api/get-products";
   constructor(private http:HttpClient) { }
   getcommunity():Observable<any>
   {
